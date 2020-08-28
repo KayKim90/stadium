@@ -1,0 +1,32 @@
+extends base
+
+block content
+  .flex-container
+
+    each course in courses
+      .card
+        .card-header
+          .card-picture
+            a(href='#')
+              img.card-picture-img(src=`/img/course/${course.imgCover}`, alt=`${course.name}`)
+              //- h4.card-img-heading= course.name
+        .card-details
+          h4.card-sub-heading= course.name
+          p.card-text= course.summary
+          .card-data
+            span= `${course.lectures} lectures`
+          .card-data
+            span= `${course.hours} hours`
+          .card-data
+            span= `${course.category}`
+          .card-data
+            span= `${course.difficulty}`
+        .card-footer
+          p
+            span.card-footer-value= `$ ${course.price}`  
+          p.card-ratings
+            span.card-footer-value= course.ratingsAverage 
+            | 
+            span.card-footer-text= `rating(${course.ratingsQuantity})`
+            //- span.card-footer-text rating (21)
+          a.btn.btn--green(href=`/course/${course.slug}`) Details

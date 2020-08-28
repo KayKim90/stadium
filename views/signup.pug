@@ -1,0 +1,21 @@
+extends base
+
+block content
+  main.main(style=" ")
+    .signup-form
+      h2.heading-secondary.mb-3 Welcome to STADIUM
+      form.signupform
+        .form__group
+          label.form__label(for='email') Email Address
+          input#email.form__input(type='email', placeholder='user@example.com', required)
+        .form__group
+          label.form__label(for='password') Password
+          input#password.form__input(type='password', placeholder='********', required, minlength='8')
+        .form__group
+          label.form__label(for='password-confirm') Confirm password
+          input#password-confirm.form__input(type='password', placeholder='********', required, minlength='8')
+        .form__group
+          label.form__label(for='name') Name
+          input#name.form__input(type='text', placeholder='Enter your full name', required)
+        .form__group
+          button.btn.btn--signup sign up

@@ -1,0 +1,110 @@
+.sidenav-main {
+  display: flex;
+  width: 70%;
+  height: 550px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  padding: 0;
+  box-shadow: 0 2rem 4rem 0.5rem rgba(0, 0, 0, 0.15);
+  -webkit-border-top-left-radius: 10px 10px;
+  -webkit-border-bottom-left-radius: 10px 10px;
+  -webkit-border-top-right-radius: 10px 10px;
+  -webkit-border-bottom-right-radius: 10px 10px;
+  -moz-border-radius-topleft: 10px 10px;
+  -moz-border-radius-bottomleft: 10px 10px;
+  -moz-border-radius-topright: 10px 10px;
+  -moz-border-radius-bottomright: 10px 10px;
+}
+.sidenav {
+  width: 340px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#6f82d5),
+    to(#19066d)
+  );
+  background: linear-gradient(to right bottom, #6f82d5, #19066d);
+  padding-left: 0;
+  // border-top-left-radius: 10px 10px;
+  // border-bottom-left-radius: 10px 10px;
+  -webkit-border-top-left-radius: 10px 10px;
+  -webkit-border-bottom-left-radius: 10px 10px;
+  -moz-border-radius-topleft: 10px 10px;
+  -moz-border-radius-bottomleft: 10px 10px;
+  i {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  a {
+    display: block;
+    padding: 2rem;
+  }
+}
+.sidenav-content {
+  width: 100%;
+  background-color: rgb(238, 234, 234);
+  // padding-left: 12rem;
+  // padding-right: 12rem;
+  padding: 2rem 14rem 2rem 14rem;
+  -webkit-border-top-right-radius: 10px 10px;
+  -webkit-border-bottom-right-radius: 10px 10px;
+  -moz-border-radius-topright: 10px 10px;
+  -moz-border-radius-bottomright: 10px 10px;
+}
+
+.nav-account,
+.nav-account:visited,
+.nav-account:link {
+  color: #fff;
+  text-decoration: none;
+}
+.nav-account:hover,
+.nav-account:active {
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  border-color: rgb(238, 234, 234);
+  border-style: none none none solid;
+  margin-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .sidenav-main {
+    display: inline;
+    // padding-top: 20px;
+  }
+  .sidenav-content {
+    padding: 0;
+    background-color: #fff;
+    margin-top: 50px;
+    form {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  .sidenav {
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+    padding: 0;
+    margin-top: 15px;
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-topleft: 0;
+    -moz-border-radius-bottomleft: 0;
+    i {
+      padding-right: 7px;
+      padding-left: 7px;
+    }
+    a {
+      display: inline-block;
+      padding: 2rem;
+    }
+  }
+  .nav-account:hover,
+  .nav-account:active {
+    border-style: none;
+  }
+}

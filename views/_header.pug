@@ -1,0 +1,30 @@
+header.header.fixed
+  nav.navbar.navbar-fixed-top  
+    div.navbar-header
+      a.header__link(href='/')
+        img.navbar-small-img(src='/img/favicon.png', alt='main-logo')
+        img.navbar-big-img(src='/img/logo-main.png', alt='main-logo')
+      form.nav-search
+        input.nav-search-input(type='text', placeholder='Search classes')(style="font-color: white")
+        button.nav-search-btn
+          i.fa.fa-search
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+        span.fa.fa-bars
+      a.navbar-brand(href='/') 
+
+    #myNavbar.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right.nav-user(style="")
+        if user
+          li
+            a.nav-user-el.logout-btn(style="margin-top: 2px;") Log out
+          li
+            a.nav-user-el(href='/me')
+              img.nav-user-img(src=`/img/user/${user.photo}`, alt='profile')
+              span= user.name.split(' ')[0]
+        else 
+          li
+            a.nav-user-el(href='/signup') Sign up
+          li
+            a.nav-user-el(href='/login') Log in
+          //- li
+          //-   a.nav-user-el(href='/me') account 

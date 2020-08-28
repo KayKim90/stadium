@@ -1,0 +1,64 @@
+extends base
+
+mixin reviewCard (review) 
+  .reviews-card
+    .reviews-avatar
+      img.reviews-avatar-img(src=`/img/user/${review.user.photo}` alt=`${review.user.name}`)
+      h6.reviews-user= review.user.name
+    p.reviews-text= review.review
+    .reviews-rating
+      each star in [1, 2, 3, 4, 5]
+        span(class=`reviews-star-${review.rating>=star ? 'active' : 'inactive'}`) &starf;
+
+block content
+  section.section-course
+    .row
+      .col-md-4.col-sm-12.course-left
+        p.course-left-link
+          a(href='#')= course.category
+          |         &gt; 
+          a(href='#')= course.name
+        iframe(src='https://player.vimeo.com/video/92060046?byline=0' width='100%' frameborder='0' allow='autoplay; fullscreen' allowfullscreen='')
+        .grid-container.course-left-table
+          div
+            | Instructors:
+          div
+            li
+              each teacher in course.teachers
+                ul= teacher.name
+      .col-md-8.col-sm-12.course-right
+        .course-right-table
+          .tbl
+            i.fa.fa-credit-card.fa-purple
+            span.tbl-name Price
+            span.tbl-content= course.price 
+          .tbl
+            i.fa.fa-star.fa-purple
+            span.tbl-name Rating
+            span.tbl-content= `${course.ratingsAverage}/5`
+          .tbl
+            i.fa.fa-edit.fa-purple
+            span.tbl-name Difficulty
+            span.tbl-content= course.difficulty
+          .tbl
+            i.fa.fa-book.fa-purple
+            span.tbl-name Lectures
+            span.tbl-content= course.lectures
+        p= course.description
+
+  section.section-reviews
+    .reviews  
+      each review in course.reviews 
+        +reviewCard(review)
+
+
+  section.section-cta
+    .cta
+      .cta__img.cta__img--logo
+        img(src='/img/logo-white.png' alt='logo')
+      .cta__content
+        h2.heading-secondary What are you waiting for?
+        p.cta__text
+          | If you register today, you will get 50% discount!
+        button.btn.btn--purple
+          | Study now!

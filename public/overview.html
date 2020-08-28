@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Theme Made By www.w3schools.com -->
+    <title>Study App</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- <script defer src="js/online-study-app.js"></script> -->
+  </head>
+  <body>
+    <!--header logo/ search bar/ collapse navigation-->
+    <header class="header fixed">
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="fa fa-bars"></span>
+          </button>
+          <a class="navbar-brand" href="#myPage">Logo</a>
+          <form class="nav-search">
+            <input
+              class="nav-search-input"
+              type="text"
+              placeholder="Search classes"
+            />
+            <button class="nav-search-btn">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right nav-user">
+            <!--need to fixed: my class padding top-->
+            <li style="padding-top: 4.5px;">
+              <a href="#" class="nav-user-el">My Classes</a>
+            </li>
+            <li>
+              <a href="#" class="nav-user-el">
+                <img
+                  src="img/default.jpg"
+                  alt="User photo"
+                  class="nav-user-img"
+                />
+                <span>Default</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--
+        <button class="nav__el">Log in</button>
+        <button class="nav__el nav__el--cta">Sign up</button>
+        -->
+      </nav>
+    </header>
+
+    <!-- Container (Main classes) -->
+    <div class="flex-container">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-picture">
+            <a href="#">
+              <img
+                src="img/class-1-cover.jpg"
+                alt="Class 1"
+                class="card-picture-img"
+              />
+
+              <h4 class="card-img-heading">Node/Html Web</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-details">
+          <h4 class="card-sub-heading">Easy Start Node</h4>
+          <p class="card-text">
+            Web application with node, html, js, scss features login, register,
+            CRUD
+          </p>
+          <div class="card-data">
+            <span>100 lectures</span>
+          </div>
+          <div class="card-data">
+            <span>35 hours</span>
+          </div>
+          <div class="card-data">
+            <span>Software</span>
+          </div>
+          <div class="card-data">
+            <span>Entry level</span>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <p>
+            <span class="card-footer-value">$297</span>
+            <span class="card-footer-text">per person</span>
+          </p>
+          <p class="card-ratings">
+            <span class="card-footer-value">4.9</span>
+            <span class="card-footer-text">rating (21)</span>
+          </p>
+          <a href="#" class="btn btn--green btn--small">Details</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-picture">
+            <a href="#">
+              <img
+                src="img/class-1-cover.jpg"
+                alt="Class 1"
+                class="card-picture-img"
+              />
+
+              <h4 class="card-img-heading">Node/Html Web</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-details">
+          <h4 class="card-sub-heading">Easy Start Node</h4>
+          <p class="card-text">
+            Web application with node, html, js, scss features login, register,
+            CRUD
+          </p>
+          <div class="card-data">
+            <span>100 lectures</span>
+          </div>
+          <div class="card-data">
+            <span>35 hours</span>
+          </div>
+          <div class="card-data">
+            <span>Software</span>
+          </div>
+          <div class="card-data">
+            <span>Entry level</span>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <p>
+            <span class="card-footer-value">$297</span>
+            <span class="card-footer-text">per person</span>
+          </p>
+          <p class="card-ratings">
+            <span class="card-footer-value">4.9</span>
+            <span class="card-footer-text">rating (21)</span>
+          </p>
+          <a href="#" class="btn btn--green btn--small">Details</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-picture">
+            <a href="#">
+              <img
+                src="img/class-1-cover.jpg"
+                alt="Class 1"
+                class="card-picture-img"
+              />
+
+              <h4 class="card-img-heading">Node/Html Web</h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="card-details">
+          <h4 class="card-sub-heading">Easy Start Node</h4>
+          <p class="card-text">
+            Web application with node, html, js, scss features login, register,
+            CRUD
+          </p>
+          <div class="card-data">
+            <span>100 lectures</span>
+          </div>
+          <div class="card-data">
+            <span>35 hours</span>
+          </div>
+          <div class="card-data">
+            <span>Software</span>
+          </div>
+          <div class="card-data">
+            <span>Entry level</span>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <p>
+            <span class="card-footer-value">$297</span>
+            <span class="card-footer-text">per person</span>
+          </p>
+          <p class="card-ratings">
+            <span class="card-footer-value">4.9</span>
+            <span class="card-footer-text">rating (21)</span>
+          </p>
+          <a href="#" class="btn btn--green btn--small">Details</a>
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="footer">
+        <div class="footer__logo">
+          <!-- <img src="img/logo-green.png" alt="Natours logo" /> -->
+          <h3>Logo</h3>
+        </div>
+        <ul class="footer__nav">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Download apps</a></li>
+          <li><a href="#">Become a teacher</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <p class="footer__copyright">
+          &copy; by Kay Kyungah Kim. All rights reserved.
+        </p>
+      </div>
+  
+    <script></script>
+  </body>
+</html>

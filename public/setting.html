@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Theme Made By www.w3schools.com -->
+    <title>TEMP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- <script defer src="js/online-study-app.js"></script> -->
+    <style>
+      #jb-container {
+        width: 940px;
+        margin: 10px auto;
+        padding: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-header {
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-content {
+        width: 580px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: left;
+        border: 1px solid #bcbcbc;
+      }
+      #jb-sidebar {
+        width: 260px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: right;
+        border: 1px solid #bcbcbc;
+      }
+      @media ( max-width: 480px ) {
+        #jb-container {
+          width: auto;
+        }
+        #jb-content {
+          float: none;
+          width: auto;
+        }
+        #jb-sidebar {
+          float: none;
+          width: auto;
+        }
+      }
+</style>
+    </style>
+  </head>
+  <body>
+    <!--header logo/ search bar/ collapse navigation-->
+    <header class="header fixed">
+      <nav class="navbar navbar-fixed-top">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="fa fa-bars"></span>
+          </button>
+          <a class="navbar-brand" href="#myPage">Logo</a>
+          <form class="nav-search">
+            <input
+              class="nav-search-input"
+              type="text"
+              placeholder="Search classes"
+            />
+            <button class="nav-search-btn">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right nav-user">
+            <!--need to fixed: my class padding top-->
+            <li style="padding-top: 4.5px;">
+              <a href="#" class="nav-user-el">My Classes</a>
+            </li>
+            <li>
+              <a href="#" class="nav-user-el">
+                <img
+                  src="img/default.jpg"
+                  alt="User photo"
+                  class="nav-user-img"
+                />
+                <span>Default</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--
+        <button class="nav__el">Log in</button>
+        <button class="nav__el nav__el--cta">Sign up</button>
+        -->
+      </nav>
+    </header>
+
+    <!-- Container (Main classes) -->
+    <div style="display: flex; width: 80%; height: 500px; background-color: palevioletred; margin: 0 auto; margin-top: 30px;">
+      <div class="sidenav" style="width: 200px; background-color: #111;">
+        <a href="#about" style="display: block; padding: 2rem;">SETTING</a>
+        <a href="#services" style="display: block; padding: 2rem;">REVIEWS</a>
+        <a href="#clients" style="display: block; padding: 2rem;">BILLING</a>
+      </div>
+      <div class="main" style="width: 100%;" >
+        <img
+          src="img/user/default.jpg"
+          alt="User photo"
+          style="width: 100px; border-radius: 50%;"
+       />
+        <h3>Welcome, Amanda Smith</h3>
+        <p>Your email: amanda@eample.com</p>
+        <!-- <form>
+          <label for="email">Email</label>
+          <input type="email" readonly placeholder="amanda@example.com">
+          <label for="password">Current password</label>
+          <input type="password"placeholder='********', required, minlength='8'>
+          <label for="password">new password</label>
+          <input type="password"placeholder='********', required, minlength='8'>
+          <label for="password">Confirm password</label>
+          <input type="password"placeholder='********', required, minlength='8'>
+        </form> -->
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+      <div class="footer__logo">
+        <h3>Logo</h3>
+      </div>
+      </ul>
+      <p class="footer__copyright">
+        &copy; by Kay Kyungah Kim. All rights reserved.
+      </p>
+    </div>
+
+    <script></script>
+  </body>
+</html>
